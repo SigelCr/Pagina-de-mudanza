@@ -1,0 +1,124 @@
+.containerService {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  width: 75%;
+  max-width: 700px;
+  margin: 20px auto 20px auto;
+}
+.containerService p {
+  font-size: 15px;
+  color: rgba(22, 21, 21, 0.753);
+}
+
+.container2ImgService {
+  display: flex;
+}
+.blurBackground1 {
+  background-image: url(https://res.cloudinary.com/difrhbjlk/image/upload/v1685069610/vista-lateral-repartidor-escribiendo-portapapeles_107420-27166_f9y57w.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+}
+.blurBackground2 {
+  background-image: url(https://res.cloudinary.com/difrhbjlk/image/upload/v1685069634/repartidores-cargando-cajas-carton-furgoneta-mientras-preparan-envio_637285-2289_d4b7gh.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+}
+
+.titleImg {
+  font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 300px;
+}
+.titleImg:hover {
+  color: rgb(8, 4, 56);
+  cursor: pointer;
+}
+/*service in card*/
+.h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px;
+  margin: 0px;
+  text-align: center;
+  border: 2px solid black;
+}
+.containerFatherServiceCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-image: url(https://res.cloudinary.com/difrhbjlk/image/upload/v1685160102/263773855_3139427076344012_1337466965797894884_n.jpg_uwdnb6.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.containerFatherServiceCard::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.containerCardService {
+  margin: 15px;
+  padding: 10px;
+  width: 300px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.342);
+  border-radius: 10px;
+  z-index: 10;
+  color: white;
+  transition: 0.6s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.containerCardService:hover {
+  background-color: rgba(0, 0, 0, 0);
+  filter: blur(0px);
+  transition: 0.6s;
+  cursor: pointer;
+}
+.titleCard {
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+}
+.descriptionCard {
+  text-align: center;
+}
+.imgCard {
+  width: 300px;
+  height: 250px;
+  min-width: 250px;
+  border-radius: 5px;
+}
+/*----------------------*/
+/*----------------------*/
+@media (max-width: 767px) {
+  .containerService {
+    width: 75%;
+    min-width: 300px;
+  }
+  .container2ImgService {
+    display: block;
+  }
+  .blurBackground1 {
+    width: 100%;
+  }
+  .blurBackground2 {
+    width: 100%;
+  }
+
+  .containerFatherServiceCard {
+    background-size: cover;
+  }
+}

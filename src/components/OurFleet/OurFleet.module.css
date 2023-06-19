@@ -1,0 +1,75 @@
+.containerFatherOurFleet {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  padding: 5px;
+  text-align: center;
+  background-image: url(https://res.cloudinary.com/difrhbjlk/image/upload/v1685294667/126868539_2860179627602093_6868154629947722137_n.jpg_koqkgy.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(15, 15, 15);
+  height: 100%;
+  color: white;
+  position: relative;
+}
+.containerFatherOurFleet::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.h1 {
+  position: relative;
+  font-size: 30px;
+}
+/*imgsection*/
+.fatherMap {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.containerImgFleet {
+  position: relative;
+  margin: 10px;
+  height: 100%;
+}
+.imgFleet {
+  width: 300px;
+  height: 100%;
+  margin: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.349);
+}
+.imgFleet img {
+  background-color: rgba(0, 0, 0, 0.548);
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+.imgFleet img:hover {
+  cursor: pointer;
+}
+
+.button {
+  padding: 5px;
+  margin: 0 0 10px 0;
+  color: white;
+  background-color: rgba(128, 128, 128, 0);
+}
+.button:hover {
+  cursor: pointer;
+}
+/*----------*/
+/*----------*/
+@media (max-width: 767px) {
+  .h1 {
+    font-size: 22px;
+  }
+  .imgFleet {
+    width: 250px;
+    height: 100%;
+    margin: 5px;
+  }
+}

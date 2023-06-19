@@ -1,0 +1,54 @@
+.containerWhyChooseUs {
+  padding: 5px;
+  background-color: rgba(19, 18, 18, 0.877);
+}
+
+.containerMap {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.containerCardChoose {
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 250px;
+  height: 350px;
+  padding: 5px;
+  margin: 10px;
+  background-color: rgba(248, 239, 221, 0.925);
+}
+.h1 {
+  color: white;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.title {
+  border-bottom: 1px solid black;
+  margin: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.description {
+  font-weight: 300;
+  margin: 10px 2.5px 5px 2.5px;
+  padding: 5px;
+}
+
+@media (max-width: 767px) {
+  .h1 {
+    font-size: 25px;
+  }
+  .containerCardChoose {
+    height: 315px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .description {
+    font-size: 13px;
+  }
+}
