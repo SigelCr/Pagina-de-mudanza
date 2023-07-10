@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import styled from "./Navbar.module.css";
 import BurguerButton from "../BurguerButton/BurguerButton";
